@@ -41,7 +41,7 @@ def mostrar_tareas(lista_tareas):
         print("No hay tareas en la lista.")
     else:
         print("Lista de tareas:")
-        for i, tarea in enumerate(lista_tareas, 0):
+        for i, tarea in enumerate(lista_tareas, 1):
             estado = "Completada" if tarea["completada"] else "Pendiente"
             print(f"{i}. {tarea['tarea']} - Estado: {estado}")
 
@@ -77,4 +77,3 @@ def main():
 
 
 main()
-
